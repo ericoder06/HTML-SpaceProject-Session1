@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Space</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="backend.js"></script>
+  </head>
+  <body>
+    <div class="upper-nav">
+      <header>
+        <div class="logo">
+          <img src="logo.png" />
+        </div>
+      </header>
+      <nav>
+        <div id="sidebar-nav" class="sidebarnav">
+          <a
+            href="javascript:void(0)"
+            class="closebutton"
+            onclick="closeNavigation()"
+            >&times;</a
+          >
+          <div class="links">
+            <a href="#">HOME</a>
+            <a href="#space">SPACE</a>
+            <a href="#rockets">ROCKETS</a>
+          </div>
+        </div>
+
+        <div class="navButtonStyle">
+          <span
+            class="navButtonStyle"
+            id="navigation-button"
+            onclick="openNavigation()"
+            >&#9776;</span
+          >
+        </div>
+      </nav>
+    </div>
+    <main>
+      <h1>SPACE</h1>
+      <a href="#heading"
+        ><img src="images/arrow-down.png" class="arrow-down"
+      /></a>
+
+      <img src="/images/planets/earth-image.png" class="planet-home-image" />
+      <div class="SPACE" id="space">
+        <h2 id="heading" id="selection-planet">The Space</h2>
+        <p class="space-description">
+          Explore the wonders of space, the boundless cosmic expanse that
+          extends beyond Earth's atmosphere. This vacuum, devoid of air and
+          atmosphere, hosts a mesmerizing array of celestial bodies—stars,
+          planets, moons, asteroids, and galaxies. Space presents a unique
+          environment with extreme temperatures, microgravity, and cosmic
+          phenomena that captivate the imagination. From the twinkling stars to
+          the breathtaking landscapes of distant galaxies, space is a realm of
+          beauty and mystery. Human exploration, marked by historic moon
+          landings and robotic missions to other planets, continues to unveil
+          the secrets of the universe. Join us in the journey of discovery as we
+          delve into the fascinating realm of space, where science and wonder
+          converge to expand our understanding of the cosmos.
+        </p>
+
+        <div class="selection-planets">
+          <div>
+            <img
+              src="/images/planets/earth-image.png"
+              class="planet-selection"
+              id="Earth"
+            />
+            <h3><a href="earth.html" class="button-design">Earth</a></h3>
+          </div>
+          <div>
+            <img src="/images/planets/sun-image.png" class="planet-selection" />
+            <h3><a href="sun.html" class="button-design">Sun</a></h3>
+          </div>
+          <div class="saturn">
+            <img
+              src="/images/planets/saturn-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="saturn.html" class="button-design">Saturn</a></h3>
+          </div>
+          <div>
+            <img
+              src="/images/planets/mars-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="mars.html" class="button-design">Mars</a></h3>
+          </div>
+          <div>
+            <img
+              src="/images/planets/neptune-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="neptune.html" class="button-design">Neptune</a></h3>
+          </div>
+          <div>
+            <img
+              src="/images/planets/mercury-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="mercury.html" class="button-design">Mercury</a></h3>
+          </div>
+          <div>
+            <img
+              src="/images/planets/jupiter-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="jupiter.html" class="button-design">Jupiter</a></h3>
+          </div>
+          <div class="uranus">
+            <img
+              src="/images/planets/uranus-image.png"
+              class="planet-selection"
+            />
+            <h3><a href="uranus.html" class="button-design">Uranus</a></h3>
+          </div>
+          <div>
+            <img
+              src="/images/planets/venus-image.png"
+              class="planet-selection"
+              id="Venus"
+            />
+            <h3><a href="venus.html" class="button-design">Venus</a></h3>
+          </div>
+        </div>
+        <div class="planets-arrows">
+          <a href="#Earth"
+            ><img src="images/arrow-down.png" class="arrow-down-planets-1"
+          /></a>
+          <a href="#Venus"
+            ><img src="images/arrow-down.png" class="arrow-down-planets-2"
+          /></a>
+        </div>
+      </div>
+      <div class="ROCKETS" id="rockets">
+        <h1>ROCKETS</h1>
+        <a href="#heading-2"
+          ><img src="images/arrow-down.png" class="arrow-down"
+        /></a>
+
+        <img src="/images/rockets/main-rocket.png" class="rocket-home-image" />
+        <h2 id="heading-2">The Rockets</h2>
+        <p class="space-description">
+          Embark on an exhilarating exploration of the cosmos on our website
+          dedicated to rockets. Here, we delve into the fascinating world of
+          rocketry, offering insights into the principles of propulsion, the
+          evolution of space travel, and the diverse array of rockets that have
+          shaped our journey beyond Earth. Whether you're a space enthusiast, a
+          student, or simply curious about the marvels of aerospace technology,
+          our content covers everything from historical milestones to the latest
+          advancements in rocket science. Join us as we unravel the mysteries of
+          the universe, one rocket at a time, providing an engaging and
+          informative resource for all those captivated by the wonders of space
+          exploration.
+        </p>
+
+        <div class="selection-rockets">
+          <div id="spacex">
+            <img
+              src="/images/rockets/spaceX.png"
+              class="planet-selection"
+              id="Earth"
+            />
+            <h3>
+              <a href="https://www.spacex.com/" class="button-design">SpaceX</a>
+            </h3>
+          </div>
+          <div>
+            <img src="/images/rockets/Nasa.png" class="planet-selection" />
+            <h3>
+              <a href="https://www.nasa.gov/" class="button-design">NASA</a>
+            </h3>
+          </div>
+          <div>
+            <img
+              src="/images/rockets/virgin-galactic.png"
+              class="planet-selection"
+            />
+            <h3>
+              <a href="https://www.virgingalactic.com/" class="button-design"
+                >Virgin <br />Galactic</a
+              >
+            </h3>
+          </div>
+          <div id="blueorigin">
+            <img
+              src="/images/rockets/blue-origins.png"
+              class="blue-origin"
+              class="planet-selection"
+            />
+            <h3>
+              <a href="https://www.blueorigin.com/" class="button-design"
+                >Blue Origins</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="planets-arrows">
+          <a href="#spacex"
+            ><img src="images/arrow-down.png" class="arrow-down-planets-1"
+          /></a>
+          <a href="#blueorigin"
+            ><img src="images/arrow-down.png" class="arrow-down-planets-2"
+          /></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy;Eric Kossovsky 2023 - DO NOT COPY OR USE FOR PERSONAL PROJECTS.
+        THIS IS OWNED BY ERIC KOSSOVSKY
+      </p>
+    </footer>
+  </body>
+</html>

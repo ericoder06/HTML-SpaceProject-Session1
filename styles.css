@@ -1,0 +1,283 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+}
+.logo > img {
+  width: 70px;
+  margin-left: 35px;
+  margin-top: 45px;
+}
+
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navButtonStyle {
+  font-size: 40px;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  color: white;
+}
+.navButtonStyle:hover {
+  color: #a1a1a1;
+}
+
+.sidebarnav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebarnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: right;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+
+  transition: 0.3s;
+}
+
+.sidebarnav a:hover {
+  color: #a1a1a1;
+}
+
+.sidebarnav .closebutton {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 70px;
+  margin-left: 50px;
+}
+
+.links {
+  margin-top: 120px;
+}
+.links > a {
+  border-bottom: 0.5px solid white;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200px;
+}
+
+.planet-home-image {
+  width: 100%;
+  position: relative;
+}
+
+.arrow-down {
+  width: 50px;
+  margin-left: 31px;
+  position: relative;
+}
+
+h2 {
+  font-size: 100px;
+  margin-left: 50px;
+}
+.space-description {
+  border: 1px solid black;
+  width: 1550px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .sidebarnav a {
+    font-size: 20px;
+  }
+  main > h1 {
+    font-size: 100px;
+  }
+  .arrow-down {
+    width: 25px;
+  }
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .space-description {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .selection-planets {
+    overflow: auto;
+  }
+  .small-planet {
+    display: none;
+  }
+  .facts-about-earth > h3 .second-line .third-line {
+    font-size: 30px;
+  }
+}
+.selection-planets {
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.selection-planets > div {
+  border: 1px solid #090909;
+  background-color: #090909;
+  border-radius: 23px;
+  height: 400px;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 50px;
+  flex: 0 0 auto;
+}
+.selection-planets > div > h3 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.selection-planets > div > img {
+  width: 100%;
+  float: right;
+}
+.saturn > img {
+  margin-top: 125px;
+}
+.uranus > img {
+  margin-top: 40px;
+}
+.selection-planets > a {
+  display: block;
+}
+
+.button-design {
+  border: 2px solid rgb(97, 97, 97);
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: rgb(97, 97, 97);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 1000;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms;
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.button-design:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-design:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.arrow-down-planets-1 {
+  transform: rotate(90deg);
+}
+
+.arrow-down-planets-2 {
+  transform: rotate(-90deg);
+}
+
+.planets-arrows {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer {
+  border: 1px solid rgb(32, 32, 32);
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 5px;
+}
+
+.ROCKETS {
+  margin-top: 200px;
+}
+
+.rocket-home-image {
+  width: 100%;
+  position: relative;
+}
+
+.selection-rockets {
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: center;
+}
+.selection-rockets > div {
+  border: 1px solid #090909;
+  background-color: #090909;
+  border-radius: 23px;
+  height: 400px;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 50px;
+  flex: 0 0 auto;
+}
+.selection-rockets > div > h3 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.selection-rockets > div > img {
+  width: 100%;
+  margin-top: 70px;
+  float: right;
+}
+.facts-about-earth {
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.facts-about-earth > h3 {
+  flex: auto;
+  font-size: 40px;
+}
+
+.second-line {
+  color: rgb(173, 173, 173);
+  font-size: 60px;
+}
+
+.third-line {
+  color: rgb(110, 110, 110);
+  font-size: 30px;
+}
+
+.small-planet {
+  width: 400px;
+  float: right;
+  margin-right: 60px;
+}
